@@ -15,7 +15,6 @@ def get_user_info(message):
                      reply_markup=markup_inline
     )
 
-
 @bot.callback_query_handler(func = lambda call: True)
 def answer(call):
     if call.data == 'yes':
